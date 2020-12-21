@@ -1,0 +1,99 @@
+QUIZZ 02
+
+ Q1. Qu'affiche le code suivant ?
+
+$my-var = "Hello World";
+echo $my-var;
+
+    a. Hello World
+    b. Un message d'erreur
+    c. my-var
+    d. $my-var
+
+RÉPONSE = b
+
+
+ Q2. Qu'affiche le code suivant ?
+
+$i = 10;
+echo --$i;  
+
+    a. 9
+    b. 10
+    c. 11
+    d. NULL
+
+RÉPONSE = a
+
+
+ Q3. Quelle variable permet d'extraire des informations de l'url affichée ?
+
+    a. $_COOKIE
+    b. $_GET
+    c. $_POST
+    d. $_SERVER
+
+RÉPONSE = b
+
+
+ Q4. Quelle syntaxe permet la déclaration d'un tableau ?
+
+Soit le tableau :
+
+$tab = {"Lapin", "Chat", "Chien", "Hamster", "Canari"}; 
+
+alors var_dump($tab) affichera :
+
+    a. array(4)
+    b. Lapin, Chat, Chien, Hamster, Canari
+    c. Canari, Hamster, Chien, Chat, Lapin
+    d. Un message d'erreur
+
+RÉPONSE = d
+// (Les crochets ne sont pas bons ,il faut [])
+
+
+ Q5. Que va afficher le code suivant ?
+
+$a = "1"; 
+$b = "2hello world !";
+
+echo $a+$b;   
+
+    a. 1
+    b. 2
+    c. 3
+    d. 3 et un message de type avertissement
+
+RÉPONSE = d
+
+
+ Q6. Que va afficher le code suivant ?
+
+$a = 'Dave Loper';
+$b = 'Bonjour $a';
+
+echo $b;
+
+    a. Bonjour Dave Loper
+    b. Bonjour $a
+    c. Bonjour $b
+    d. Un message d'erreur
+
+RÉPONSE = b 
+// Pour afficher la variable $a, il faut utiliser les double quotes.
+
+
+ Q7. Que va afficher le code suivant ?
+
+$a = 2;
+$a *= 2;
+
+echo $a;
+
+    a. 2
+    b. 4
+    c. 16
+    d. Un message d'erreur
+
+RÉPONSE = b
