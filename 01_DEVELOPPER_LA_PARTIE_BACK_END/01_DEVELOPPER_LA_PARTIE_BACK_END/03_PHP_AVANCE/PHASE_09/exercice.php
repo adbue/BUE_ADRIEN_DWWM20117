@@ -10,20 +10,20 @@
     <h2>Exercices</h2>
     <p>Téléchargez le fichier ListeLiens.zip contenant des adresses web et écrire un programme qui lit ce fichier pour construire \
     une page web contenant une liste de liens hypertextes.</p><br>
-
+    <h2>Voici la liste de liens utiles :</h2>
     <?php
 
 
-$fichier = fopen("ListeLiens.txt","rb");
+$list = fopen("rsrc\ListeLiens.txt","r");
 
-// on va lire chaque ligne du document texte
-echo '<a href='.fgets($fichier).'>http://www.python.org/</a><br>';
-echo '<a href='.fgets($fichier).'>http://www.afpa.fr/</a><br>';
-echo '<a href='.fgets($fichier).'>http://fr.wikipedia.org/wiki/Sp%C4%B1n%CC%88al_Tap</a><br>';
-echo '<a href='.fgets($fichier).'>http://www.gallien-krueger.com/</a><br>';
-echo '<a href='.fgets($fichier).'>http://www.ampeg.com/</a><br>';
 
-fclose($fichier);
+print("<a href=".fgets($list).">http://www.python.org/</a><br>");
+print("<a href=".fgets($list).">http://www.afpa.fr/</a><br>");
+print("<a href=".fgets($list).">http://fr.wikipedia.org/wiki/Sp%C4%B1n%CC%88al_Tap</a><br>");
+print("<a href=".fgets($list).">http://www.gallien-krueger.com/</a><br>");
+print("<a href=".fgets($list).">http://www.ampeg.com/</a><br>");
+
+fclose($list);
 
 
     ?>
